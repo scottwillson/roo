@@ -20,5 +20,6 @@ group :local_development do
   gem 'guard-preek', require: false
   gem 'guard-rubocop', require: false
   gem 'guard-reek', github: 'pericles/guard-reek', require: false
+  gem 'json', '>= 2.0.0'
   gem 'pry'
 end
