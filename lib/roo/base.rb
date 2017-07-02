@@ -633,7 +633,7 @@ class Roo::Base
     case sheet
     when nil
       fail ArgumentError, "Error: sheet 'nil' not valid"
-    when Fixnum
+    when Integer
       sheets.fetch(sheet - 1) do
         fail RangeError, "sheet index #{sheet} not found"
       end
