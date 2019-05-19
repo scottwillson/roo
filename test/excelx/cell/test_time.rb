@@ -25,6 +25,6 @@ class TestRooExcelxCellTime < Minitest::Test
 
   def test_value
     cell = roo_time.new('0.0751', nil, [:numeric_or_formula, 'h:mm'], 6, nil, base_timestamp, nil)
-    assert_kind_of Integer, cell.value
+    assert_kind_of Float, cell.value
   end
 end
